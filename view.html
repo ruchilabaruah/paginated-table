@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="view.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <div class="configSection">
+          <!-- <div>
+            <h5>Column config</h5>
+          </div>
+          <div>
+            <h5>Header config</h5>
+          </div> -->
+          <div>
+            <h5>Table pagination config</h5>
+            <div>
+              Table Paginated ?
+              <select name="pagination" id="isPaginated">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div>
+              Show
+              <span><input type="text" id="recordsPerPage" /> entries</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="countriesTable">
+          <div id="tableHeaders"></div>
+          <div id="tableBody"></div>
+        </div>
+        <div style="display: flex">
+          <button type="button" id="prevBtn" onclick="goToPrevPage()">
+            Prev
+          </button>
+          <div id="pageButtons"></div>
+          <button type="button" id="nextBtn" onclick="goToNextPage()">
+            Next
+          </button>
+        </div>
+        <div id="messenger"></div>
+      </section>
+    </div>
+    <script src="view.js"></script>
+  </body>
+</html>

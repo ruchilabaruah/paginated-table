@@ -1,0 +1,36 @@
+.configSection {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+#countriesTable {
+  width: 50%;
+  /* position: relative;
+  left: 50%;
+  transform: translateX(-50%) */
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: red;
+}
+
+.tableHeaders, .tableRow {
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#pageButtons button:nth-child(1) {
+  background: red;
+  color: #ffffff;
+}
